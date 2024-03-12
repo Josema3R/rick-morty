@@ -1,8 +1,10 @@
 export default function Characters(props) {
-    const { characters, setCharacters } = props;
+    const { characters, setCharacters, setPageNumber, sethasMoreItems } = props;
 
     const resetCharacters = () => {
         setCharacters(null);
+        setPageNumber(0);
+        sethasMoreItems(true);
     }
 
     return (
